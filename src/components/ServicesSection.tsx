@@ -63,23 +63,6 @@ const ServicesSection = () => {
       adSpend: "No ad spend required",
       color: "from-orange-500 to-amber-600",
       note: "(Note: playlist inclusion not guaranteed, but submission volume is maximized for success)"
-    },
-    {
-      icon: <Zap className="w-8 h-8" />,
-      title: "Full Artist Growth Funnel (All-in-One)",
-      emoji: "🚀",
-      description: "Run ads for Spotify, YouTube, and Instagram together for maximum momentum.",
-      features: [
-        "Combined ad strategy across all platforms",
-        "Weekly optimization & creative updates",
-        "Full-funnel analytics tracking",
-        "Ideal for artists launching a single or building long-term growth"
-      ],
-      price: "$300",
-      adSpend: "per platform per month",
-      color: "from-electric-purple to-electric-blue",
-      note: "(Example: all 3 platforms = $900/month + ad spend)",
-      premium: true
     }
   ];
 
@@ -91,24 +74,16 @@ const ServicesSection = () => {
             <span className="gradient-text">🎯 Services Overview</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Choose the perfect package to amplify your music career. All services include detailed reporting and proven strategies.
+            Choose the perfect service to amplify your music career. All services include detailed reporting and proven strategies.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <div 
               key={index} 
-              className={`music-card h-full flex flex-col relative overflow-hidden ${
-                service.premium ? 'ring-2 ring-electric-purple/50 animate-pulse-glow' : ''
-              }`}
+              className="music-card h-full flex flex-col relative overflow-hidden"
             >
-              {service.premium && (
-                <div className="absolute top-0 right-0 bg-gradient-to-r from-electric-purple to-electric-blue text-white px-4 py-1 text-sm font-semibold rounded-bl-lg">
-                  MOST POPULAR
-                </div>
-              )}
-              
               <div className="flex items-center gap-4 mb-6">
                 <div className={`p-3 rounded-lg bg-gradient-to-br ${service.color} text-white`}>
                   {service.icon}
@@ -151,18 +126,73 @@ const ServicesSection = () => {
                   <p className="text-xs text-gray-400 italic">{service.note}</p>
                 )}
 
-                <Button 
-                  className={`w-full ${
-                    service.premium 
-                      ? 'glow-button' 
-                      : 'bg-white/10 hover:bg-white/20 text-white border border-white/20'
-                  }`}
-                >
+                <Button className="w-full bg-white/10 hover:bg-white/20 text-white border border-white/20">
                   Get Started
                 </Button>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Call to Action for Full Funnel */}
+        <div className="mt-16 text-center">
+          <div className="music-card max-w-4xl mx-auto relative overflow-hidden ring-2 ring-electric-purple/50 animate-pulse-glow">
+            <div className="absolute top-0 right-0 bg-gradient-to-r from-electric-purple to-electric-blue text-white px-4 py-1 text-sm font-semibold rounded-bl-lg flex items-center gap-1">
+              <Zap className="w-4 h-4" />
+              MAXIMUM IMPACT
+            </div>
+            
+            <div className="flex items-center gap-4 mb-6">
+              <div className="p-4 rounded-lg bg-gradient-to-br from-electric-purple to-electric-blue text-white">
+                <Zap className="w-10 h-10" />
+              </div>
+              <div>
+                <span className="text-3xl mr-2">🚀</span>
+                <h3 className="text-2xl font-bold text-white">Full Artist Growth Funnel (All-in-One)</h3>
+              </div>
+            </div>
+
+            <p className="text-gray-300 mb-6 text-lg leading-relaxed">
+              Run ads for Spotify, YouTube, and Instagram together for maximum momentum.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h4 className="font-semibold text-white mb-4">What's Included:</h4>
+                <ul className="space-y-2">
+                  <li className="text-gray-300 text-sm flex items-start gap-2">
+                    <span className="text-electric-purple mt-1">•</span>
+                    Combined ad strategy across all platforms
+                  </li>
+                  <li className="text-gray-300 text-sm flex items-start gap-2">
+                    <span className="text-electric-purple mt-1">•</span>
+                    Weekly optimization & creative updates
+                  </li>
+                  <li className="text-gray-300 text-sm flex items-start gap-2">
+                    <span className="text-electric-purple mt-1">•</span>
+                    Full-funnel analytics tracking
+                  </li>
+                  <li className="text-gray-300 text-sm flex items-start gap-2">
+                    <span className="text-electric-purple mt-1">•</span>
+                    Ideal for artists launching a single or building long-term growth
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="text-center md:text-right">
+                <div className="mb-4">
+                  <span className="text-4xl font-bold gradient-text">$300</span>
+                  <span className="text-white ml-2">per platform per month</span>
+                </div>
+                <p className="text-gray-400 text-sm mb-4">
+                  (Example: all 3 platforms = $900/month + ad spend)
+                </p>
+                <Button className="glow-button text-lg px-8 py-3">
+                  Launch Full Funnel Campaign
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
