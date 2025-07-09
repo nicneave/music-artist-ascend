@@ -67,13 +67,13 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6" id="services">
+    <section className="py-20 px-6 bg-gradient-to-b from-light-gray to-white" id="services">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
             <span className="gradient-text">🎯 Services Overview</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Choose the perfect service to amplify your music career. All services include detailed reporting and proven strategies.
           </p>
         </div>
@@ -90,20 +90,20 @@ const ServicesSection = () => {
                 </div>
                 <div>
                   <span className="text-2xl mr-2">{service.emoji}</span>
-                  <h3 className="text-xl font-bold text-white">{service.title}</h3>
+                  <h3 className="text-xl font-bold text-gray-900">{service.title}</h3>
                 </div>
               </div>
 
-              <p className="text-gray-300 mb-6 leading-relaxed">
+              <p className="text-gray-600 mb-6 leading-relaxed">
                 {service.description}
               </p>
 
               <div className="flex-1">
-                <h4 className="font-semibold text-white mb-4">What's Included:</h4>
+                <h4 className="font-semibold text-gray-900 mb-4">What's Included:</h4>
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="text-gray-300 text-sm flex items-start gap-2">
-                      <span className="text-electric-purple mt-1">•</span>
+                    <li key={featureIndex} className="text-gray-600 text-sm flex items-start gap-2">
+                      <span className="text-professional-blue mt-1">•</span>
                       {feature}
                     </li>
                   ))}
@@ -111,22 +111,22 @@ const ServicesSection = () => {
               </div>
 
               <div className="mt-auto space-y-4">
-                <div className="border-t border-white/10 pt-4">
+                <div className="border-t border-gray-200 pt-4">
                   <div className="flex justify-between items-center mb-2">
-                    <span className="text-gray-400">Service Fee:</span>
+                    <span className="text-gray-500">Service Fee:</span>
                     <span className="text-2xl font-bold gradient-text">{service.price}</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-400">Recommended Ad Spend:</span>
-                    <span className="text-white font-medium">{service.adSpend}</span>
+                    <span className="text-gray-500">Recommended Ad Spend:</span>
+                    <span className="text-gray-700 font-medium">{service.adSpend}</span>
                   </div>
                 </div>
 
                 {service.note && (
-                  <p className="text-xs text-gray-400 italic">{service.note}</p>
+                  <p className="text-xs text-gray-500 italic">{service.note}</p>
                 )}
 
-                <Button className="w-full bg-white/10 hover:bg-white/20 text-white border border-white/20">
+                <Button className="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-200">
                   Get Started
                 </Button>
               </div>
@@ -136,23 +136,23 @@ const ServicesSection = () => {
 
         {/* Call to Action for Full Funnel */}
         <div className="mt-16 text-center">
-          <div className="music-card max-w-4xl mx-auto relative overflow-hidden ring-2 ring-electric-purple/50 animate-pulse-glow">
-            <div className="absolute top-0 right-0 bg-gradient-to-r from-electric-purple to-electric-blue text-white px-4 py-1 text-sm font-semibold rounded-bl-lg flex items-center gap-1">
+          <div className="music-card max-w-4xl mx-auto relative overflow-hidden ring-2 ring-professional-blue/30 animate-pulse-glow">
+            <div className="absolute top-0 right-0 bg-gradient-to-r from-professional-blue to-professional-purple text-white px-4 py-1 text-sm font-semibold rounded-bl-lg flex items-center gap-1">
               <Zap className="w-4 h-4" />
               MAXIMUM IMPACT
             </div>
             
             <div className="flex items-center gap-4 mb-6">
-              <div className="p-4 rounded-lg bg-gradient-to-br from-electric-purple to-electric-blue text-white">
+              <div className="p-4 rounded-lg bg-gradient-to-br from-professional-blue to-professional-purple text-white">
                 <Zap className="w-10 h-10" />
               </div>
               <div>
                 <span className="text-3xl mr-2">🚀</span>
-                <h3 className="text-2xl font-bold text-white">Full Artist Growth Funnel (All-in-One)</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Full Artist Growth Funnel (All-in-One)</h3>
               </div>
             </div>
 
-            <p className="text-gray-300 mb-6 text-lg leading-relaxed">
+            <p className="text-gray-600 mb-6 text-lg leading-relaxed">
               Run ads for Spotify, YouTube, and Instagram together for maximum momentum.
             </p>
 
