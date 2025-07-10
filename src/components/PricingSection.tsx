@@ -19,7 +19,7 @@ const PricingSection = () => {
     },
     {
       name: "Momentum Plan",
-      price: "$297",
+      price: "$796",
       description: "Best for new releases with complete rollout support",
       features: [
         "3 Campaigns (Spotify + YouTube + Instagram)",
@@ -32,13 +32,15 @@ const PricingSection = () => {
     },
     {
       name: "Deluxe Plan",
-      price: "$297",
+      price: "$1,499",
       description: "Ideal for comprehensive artist development",
       features: [
         "3 Ad Campaigns across all platforms",
         "Strategy call + 5 custom creatives",
         "Advanced targeting & optimization",
-        "Full placement and performance reports"
+        "Full placement and performance reports",
+        "Basic artist website included",
+        "Spotify playlisting campaign"
       ],
       popular: false,
       color: "from-amber-500 to-orange-600"
