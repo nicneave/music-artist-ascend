@@ -1,4 +1,3 @@
-
 import { Check, Star, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -10,7 +9,7 @@ const PricingSection = () => {
       description: "Perfect for testing new singles or promos",
       features: [
         "1 Ad Campaign (Spotify, Instagram, or YouTube)",
-        "Weekly reporting and optimization",
+        "Weekly reporting and optimization", 
         "Campaign setup + 2 custom creatives",
         "Performance tracking dashboard"
       ],
@@ -22,7 +21,7 @@ const PricingSection = () => {
       price: "$796",
       description: "Best for new releases with complete rollout support",
       features: [
-        "2 Campaigns (Spotify + YouTube or Instagram)",
+        "3 Campaigns (Spotify + YouTube + Instagram)",
         "Single rollout plan & content creation help",
         "Weekly reporting and optimization",
         "Combined ad strategy across platforms",
