@@ -6,7 +6,7 @@ const PricingSection = () => {
   const packages = [
     {
       name: "Kickstarter Plan",
-      price: "$300",
+      price: "$297",
       description: "Perfect for testing new singles or promos",
       features: [
         "1 Ad Campaign (Spotify, Instagram, or YouTube)",
@@ -19,25 +19,25 @@ const PricingSection = () => {
     },
     {
       name: "Momentum Plan",
-      price: "$900",
-      description: "Best for new releases or first-week push",
+      price: "$297",
+      description: "Best for new releases with complete rollout support",
       features: [
         "3 Campaigns (Spotify + YouTube + Instagram)",
+        "Single rollout plan & content creation help",
         "Weekly reporting and optimization",
-        "Combined ad strategy across platforms",
-        "Optional: +$150 for video creation"
+        "Combined ad strategy across platforms"
       ],
       popular: true,
       color: "from-primary to-primary/70"
     },
     {
       name: "Deluxe Plan",
-      price: "$1,500",
-      description: "Ideal for rollout months or label pitches",
+      price: "$297",
+      description: "Ideal for comprehensive artist development",
       features: [
-        "3 Campaigns + Spotify Playlist Submission",
-        "Strategy call + 2 custom creatives",
-        "100+ playlist curator submissions",
+        "3 Ad Campaigns across all platforms",
+        "Strategy call + 5 custom creatives",
+        "Advanced targeting & optimization",
         "Full placement and performance reports"
       ],
       popular: false,
@@ -46,11 +46,10 @@ const PricingSection = () => {
   ];
 
   const addOns = [
-    { name: "Shortform Video Creation", price: "$75-$150", description: "1-3 Reels/TikToks based on your track" },
+    { name: "Shortform Video Creation", price: "$200", description: "5 Instagram Reels/TikTok videos based on your track" },
+    { name: "Basic Artist Website", price: "$197", description: "Professional site to post music and sell merch" },
     { name: "Landing Page Setup", price: "$50", description: "Simple Linktree-style page or pre-save funnel" },
-    { name: "Extra Weekly Reporting", price: "$50/month", description: "More frequent insights for serious artists" },
-    { name: "Email Collection Setup", price: "$100", description: "Lead capture form for fan email list" },
-    { name: "Monthly Optimization Package", price: "$500/month", description: "4 campaigns per month optimization" }
+    { name: "Email Collection Setup", price: "$100", description: "Lead capture form for fan email list" }
   ];
 
   return (
@@ -89,7 +88,6 @@ const PricingSection = () => {
                 <h3 className="text-2xl font-bold text-foreground mb-2">{pkg.name}</h3>
                 <div className="flex items-center justify-center gap-2 mb-4">
                   <span className="text-4xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">{pkg.price}</span>
-                  {pkg.name === "Momentum Plan" && <span className="text-muted-foreground">/month</span>}
                 </div>
                 <p className="text-muted-foreground">{pkg.description}</p>
               </div>
@@ -125,7 +123,7 @@ const PricingSection = () => {
             Enhance your campaign with these proven add-on services
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {addOns.map((addon, index) => (
               <div key={index} className="bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 text-center animate-scale-in hover:scale-105" style={{ animationDelay: `${index * 0.1}s` }}>
                 <h4 className="font-semibold text-foreground mb-2">{addon.name}</h4>
@@ -164,7 +162,7 @@ const PricingSection = () => {
               <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mx-auto mb-3">
                 <span className="text-primary text-xl">💸</span>
               </div>
-              <p className="text-foreground font-semibold mb-1">$300 flat fee</p>
+              <p className="text-foreground font-semibold mb-1">$297 flat fee</p>
               <p className="text-muted-foreground text-sm">Low-risk entry point</p>
             </div>
             <div className="text-center animate-scale-in" style={{ animationDelay: '0.2s' }}>

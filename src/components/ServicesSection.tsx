@@ -1,5 +1,5 @@
 
-import { Music2, Youtube, Instagram, ListMusic, Zap } from "lucide-react";
+import { Music2, Youtube, Instagram, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ServicesSection = () => {
@@ -16,7 +16,7 @@ const ServicesSection = () => {
         "10-15 ad creatives using your music or visuals",
         "Weekly report: Streams gained, saves, CPC, CTR, CPM"
       ],
-      price: "$300",
+      price: "$297",
       adSpend: "$100–$500/month",
       color: "from-green-500 to-emerald-600"
     },
@@ -30,7 +30,7 @@ const ServicesSection = () => {
         "Keyword & channel targeting (e.g. 'Fans of Hip Hop, etc')",
         "Performance tracking: views, retention rate, avg watch time"
       ],
-      price: "$300",
+      price: "$297",
       adSpend: "$150–$500/month",
       color: "from-red-500 to-rose-600"
     },
@@ -45,24 +45,9 @@ const ServicesSection = () => {
         "Cost-per-follow optimization",
         "Campaign report: follower growth, engagement rate"
       ],
-      price: "$300",
+      price: "$297",
       adSpend: "$100–$300/month",
       color: "from-pink-500 to-purple-600"
-    },
-    {
-      icon: <ListMusic className="w-8 h-8" />,
-      title: "Spotify Playlisting Campaign",
-      emoji: "🎯",
-      description: "Get pitched to real playlist curators—no bots or fake streams.",
-      features: [
-        "Submission to 100+ verified curators (SubmitHub, Groover, private lists)",
-        "Niche targeting based on genre and vibe",
-        "Full placement report with playlist name, follower count, estimated reach"
-      ],
-      price: "$500",
-      adSpend: "No ad spend required",
-      color: "from-orange-500 to-amber-600",
-      note: "(Note: playlist inclusion not guaranteed, but submission volume is maximized for success)"
     }
   ];
 
@@ -83,11 +68,11 @@ const ServicesSection = () => {
             <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">🎯 Label Ready Services</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            Choose the perfect service to get your music label ready. All services include detailed reporting and proven strategies.
+            Choose the perfect advertising service to get your music label ready. All services include detailed reporting and proven strategies.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div 
               key={index} 
@@ -132,77 +117,12 @@ const ServicesSection = () => {
                   </div>
                 </div>
 
-                {service.note && (
-                  <p className="text-xs text-muted-foreground italic">{service.note}</p>
-                )}
-
                 <Button className="w-full bg-card hover:bg-card/80 text-foreground border border-border hover:border-primary/50 transition-all duration-300">
                   Get Started
                 </Button>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Call to Action for Full Funnel */}
-        <div className="mt-16 text-center">
-          <div className="bg-card/80 backdrop-blur-sm border border-border rounded-xl p-8 max-w-4xl mx-auto relative overflow-hidden ring-2 ring-primary/50 animate-pulse-glow">
-            <div className="absolute top-0 right-0 bg-gradient-to-r from-primary to-primary/70 text-primary-foreground px-4 py-1 text-sm font-semibold rounded-bl-lg flex items-center gap-1">
-              <Zap className="w-4 h-4" />
-              MAXIMUM IMPACT
-            </div>
-            
-            <div className="flex items-center gap-4 mb-6">
-              <div className="p-4 rounded-lg bg-gradient-to-br from-primary to-primary/70 text-primary-foreground">
-                <Zap className="w-10 h-10" />
-              </div>
-              <div>
-                <span className="text-3xl mr-2">🚀</span>
-                <h3 className="text-2xl font-bold text-foreground">Full Artist Growth Funnel (All-in-One)</h3>
-              </div>
-            </div>
-
-            <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
-              Run ads for Spotify, YouTube, and Instagram together for maximum momentum.
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div>
-                <h4 className="font-semibold text-foreground mb-4">What's Included:</h4>
-                <ul className="space-y-2">
-                  <li className="text-muted-foreground text-sm flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    Combined ad strategy across all platforms
-                  </li>
-                  <li className="text-muted-foreground text-sm flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    Weekly optimization & creative updates
-                  </li>
-                  <li className="text-muted-foreground text-sm flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    Full-funnel analytics tracking
-                  </li>
-                  <li className="text-muted-foreground text-sm flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    Ideal for artists launching a single or building long-term growth
-                  </li>
-                </ul>
-              </div>
-              
-              <div className="text-center md:text-right">
-                <div className="mb-4">
-                  <span className="text-4xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">$300</span>
-                  <span className="text-foreground ml-2">per platform per month</span>
-                </div>
-                <p className="text-muted-foreground text-sm mb-4">
-                  (Example: all 3 platforms = $900/month + ad spend)
-                </p>
-                <Button className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-3 hover:scale-105 transition-all duration-300">
-                  Launch Full Funnel Campaign
-                </Button>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
