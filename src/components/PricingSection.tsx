@@ -22,10 +22,11 @@ const PricingSection = () => {
       price: "$796",
       description: "Best for new releases with complete rollout support",
       features: [
-        "3 Campaigns (Spotify + YouTube + Instagram)",
+        "2 Campaigns (Spotify + YouTube or Instagram)",
         "Single rollout plan & content creation help",
         "Weekly reporting and optimization",
-        "Combined ad strategy across platforms"
+        "Combined ad strategy across platforms",
+        "Fan email newsletter setup"
       ],
       popular: true,
       color: "from-primary to-primary/70"
