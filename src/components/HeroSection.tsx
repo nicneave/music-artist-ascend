@@ -30,36 +30,27 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 text-center max-w-6xl mx-auto px-6">
-        {/* Logo Section */}
-        <div className="mb-8 animate-fade-in">
-          <img 
-            src="/lovable-uploads/a3fcedb1-c03d-4635-a8ec-e796421b1107.png" 
-            alt="Label Ready Logo"
-            className="w-64 h-auto mx-auto mb-4 filter brightness-110"
-          />
-        </div>
-
-        <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight animate-fade-in" style={{ animationDelay: '0.3s' }}>
-          Get Your Music{" "}
+        <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight animate-fade-in">
+          Get Your Artist Career{" "}
           <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
             Label Ready
           </span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.6s' }}>
-          Professional digital marketing services designed specifically for music artists. 
-          Grow your Spotify streams, YouTube views, and social media following with proven ad strategies.
+        <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          Complete your artist development phase with professional digital marketing. 
+          Build the foundation labels look for: streaming numbers, social proof, and engaged fanbase.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 animate-fade-in" style={{ animationDelay: '0.9s' }}>
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 animate-fade-in" style={{ animationDelay: '0.6s' }}>
           <Button className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-4 hover:scale-105 transition-all duration-300">
-            View Our Services
+            Start Your Development
           </Button>
           <Button 
             variant="outline" 
             className="text-lg px-10 py-4 border-border hover:border-primary/50 bg-transparent hover:bg-primary/10 hover:scale-105 transition-all duration-300"
           >
-            Get Free Consultation
+            Learn How We Help
           </Button>
         </div>
 
@@ -71,11 +62,11 @@ const HeroSection = () => {
           </div>
           <div className="bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 text-center animate-scale-in hover:scale-105" style={{ animationDelay: '0.3s' }}>
             <div className="text-4xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent mb-2">10K+</div>
-            <div className="text-muted-foreground">Artists Served</div>
+            <div className="text-muted-foreground">Artists Developed</div>
           </div>
           <div className="bg-card/80 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 text-center animate-scale-in hover:scale-105" style={{ animationDelay: '0.6s' }}>
             <div className="text-4xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent mb-2">95%</div>
-            <div className="text-muted-foreground">Client Satisfaction</div>
+            <div className="text-muted-foreground">Ready For Labels</div>
           </div>
         </div>
       </div>
