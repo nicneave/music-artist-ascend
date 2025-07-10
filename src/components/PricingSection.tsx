@@ -40,7 +40,8 @@ const PricingSection = () => {
         "Advanced targeting & optimization",
         "Full placement and performance reports",
         "Basic artist website included",
-        "Spotify playlisting campaign"
+        "Spotify playlisting campaign",
+        "Shopify store setup"
       ],
       popular: false,
       color: "from-amber-500 to-orange-600"
